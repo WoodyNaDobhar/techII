@@ -78,20 +78,16 @@
     <div class="header">
       <div class="header-inner container">
         <div class="row">
-          <div class="col-md-8"> 
+          <div class="col-md-5"> 
+          </div>
+          <div class="col-md-2"> 
             <!--branding/logo--> 
             <a class="navbar-brand" href="index.htm" title="Home">
-            	<img src="img/logo.png"><h1><span>tech</span>II</h1>
+            	<img src="img/logo2.png"><!--<h1><span>tech</span>II</h1>--> 
             </a>
-            <div class="slogan">Packaging Innovators</div>
+            <!--<div class="slogan">Packaging Innovators</div>--> 
           </div>
-          
-          <!--header rightside-->
-          <div class="col-md-4"> 
-            <!--social media icons-->
-            <div class="social-media"> 
-              <!--@todo: replace with company social media details--> 
-              <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> </div>
+          <div class="col-md-5"> 
           </div>
         </div>
         <div id="header-hidden-link"> <a href="#" title="Click me you'll get a surprise" class="show-hide" data-toggle="show-hide" data-target=".header-hidden"><i></i>Open</a> </div>
@@ -111,7 +107,7 @@
         <a class="navbar-btn" data-toggle="jpanel-menu" data-target=".navbar-collapse"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a> 
         
         <!--user menu-->
-        <div class="btn-group user-menu pull-right"> <a href="#signup-modal" class="btn btn-primary signup" data-toggle="modal">Sign Up</a> <a href="#login-modal" class="btn btn-primary dropdown-toggle login" data-toggle="modal">Login</a> </div>
+        <!--<div class="btn-group user-menu pull-right"> <a href="#signup-modal" class="btn btn-primary signup" data-toggle="modal">Sign Up</a> <a href="#login-modal" class="btn btn-primary dropdown-toggle login" data-toggle="modal">Login</a> </div>-->
         
         <!--everything within this div is collapsed on mobile-->
         <div class="navbar-collapse collapse"> 
@@ -153,8 +149,8 @@
               <!-- Mega Menu -->
               <ul class="dropdown-menu" role="menu" aria-labelledby="pages-drop">
                 <li role="presentation" class="dropdown-header">Pages</li>
-                <li role="presentation"><a role="menuitem" href="login.htm" tabindex="-1" class="menu-item">Login</a></li>
-                <li role="presentation"><a role="menuitem" href="signup.htm" tabindex="-1" class="menu-item">Sign Up</a></li>
+                <!-- <li role="presentation"><a role="menuitem" href="login.htm" tabindex="-1" class="menu-item">Login</a></li> -->
+                <!-- <li role="presentation"><a role="menuitem" href="signup.htm" tabindex="-1" class="menu-item">Sign Up</a></li> -->
                 <!-- <li role="presentation"><a role="menuitem" href="starter.htm" tabindex="-1" class="menu-item">Starter Snippets</a></li> -->
                 <!-- <li role="presentation"><a role="menuitem" href="index-static.htm" tabindex="-1" class="menu-item">Homepage Static Banner</a></li> -->
                 <li role="presentation"><a role="menuitem" href="elements.htm" tabindex="-1" class="menu-item">Theme Elements</a></li>
@@ -257,6 +253,18 @@
 <div id="content-below" class="wrapper">
   <div class="container">
     <div class="row">
+      <div class="col-md-8"> 
+      </div>
+      
+      <!--header rightside-->
+      <div class="col-md-4"> 
+        <!--social media icons-->
+        <div class="social-media"> 
+          <!--@todo: replace with company social media details--> 
+          <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="upsell"> <small class="muted">quality <span class="spacer">//</span> design <span class="spacer">//</span> leading edge <span class="spacer">//</span> inequivical <span class="spacer">//</span> </small> <a href="contact.htm" class="btn btn-primary">Contact Us For a Quote! <i class="fa fa-arrow-right"></i></a> </div>
     </div>
   </div>
@@ -319,9 +327,9 @@
 </footer>
 
 <!--Hidden elements - excluded from jPanel Menu on mobile-->
-<div class="hidden-elements jpanel-menu-exclude"> 
+<!--<div class="hidden-elements jpanel-menu-exclude"> -->
   <!--@modal - signup modal-->
-  <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<!--  <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -366,15 +374,15 @@
           </form>
         </div>
         <div class="modal-footer"> <small>Already signed up? <a href="login.htm">Login here</a>.</small> </div>
-      </div>
+      </div>-->
       <!-- /.modal-content --> 
-    </div>
+<!--    </div>--> 
     <!-- /.modal-dialog --> 
-  </div>
+<!--  </div>--> 
   <!-- /.modal --> 
   
   <!--@modal - login modal-->
-  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<!--  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -396,13 +404,13 @@
         </div>
         <div class="modal-footer"> <small>Not a member? <a href="#" class="signup">Sign up now!</a></small><br />
           <small><a href="#">Forgotten password?</a></small> </div>
-      </div>
+      </div>--> 
       <!-- /.modal-content --> 
-    </div>
+<!--    </div>--> 
     <!-- /.modal-dialog --> 
-  </div>
+<!--  </div>--> 
   <!-- /.modal --> 
-</div>
+<!--</div>--> 
 
 <!--Scripts --> 
 <script src="js/jquery.min.js"></script> 
