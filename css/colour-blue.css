@@ -293,7 +293,7 @@ body #navigation .header-hidden {
 body #navigation .header {
   border-top-color: #4D8CC2;
   /* primary colour */
-
+	padding-top: 5px;
 }
 body #navigation .navbar-brand {
   color: #4D8CC2;
@@ -343,15 +343,21 @@ body #navigation .navbar,
 body #navigation .js-clingify-locked {
   border-bottom-color: #4D8CC2;
   /* primary colour */
-
+	background-color: #333333;
 }
 body .navbar-nav .divider-vertical {
   border-left-color: #00666e;
   border-right-color: rgba(255, 255, 255, 0.15);
 }
+.navbar-nav > li.home-link{
+	border: 0;
+}
 body .navbar-nav > li {
   border-left-color: #00666e;
   border-right-color: rgba(255, 255, 255, 0.15);
+}
+body .navbar-nav > li.active a {
+	background-color: #4D8CC2;
 }
 body .navbar-nav .dropdown-menu {
   border-bottom-color: #4D8CC2;

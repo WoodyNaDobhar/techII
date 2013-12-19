@@ -5689,7 +5689,7 @@ a:hover .icon-inverse-80 {
 #header-hidden-link {
   position: absolute;
   right: 15px;
-  top: -15px;
+  top: -5px;
 }
 #header-hidden-link a.show-hide,
 #header-hidden-link a.top-link {
@@ -5810,7 +5810,7 @@ a:hover .icon-inverse-80 {
   position: relative;
 }
 #navigation .header .social-media {
-  margin: 16px 0 0 0;
+  margin: 29px 0 0 0;
 }
 #navigation .navbar-brand {
   font-weight: 400;
