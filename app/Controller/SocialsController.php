@@ -49,7 +49,7 @@ class SocialsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Social->create();
 			if ($this->Social->save($this->request->data)) {
-				$this->Session->setFlash(__('The social has been saved.'));
+				$this->Session->setFlash(__('The social has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The social could not be saved. Please, try again.'));
@@ -72,7 +72,7 @@ class SocialsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Social->save($this->request->data)) {
-				$this->Session->setFlash(__('The social has been saved.'));
+				$this->Session->setFlash(__('The social has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The social could not be saved. Please, try again.'));
@@ -81,7 +81,7 @@ class SocialsController extends AppController {
 			$options = array('conditions' => array('Social.' . $this->Social->primaryKey => $id));
 			$this->request->data = $this->Social->find('first', $options);
 		}
-		$services = $this->getFreeServices();
+		$services = $this->getFreeServices($id);
 		$this->set(compact('services'));
 	}
 
@@ -111,13 +111,17 @@ class SocialsController extends AppController {
 	 * Get all the social services not currently in use
 	 * @return multitype:
 	 */
-	function getFreeServices(){
+	function getFreeServices($id){
 		
 		//the whole list
 		$base = Configure::read('socials');
 		
 		//what we're already using
-		$usedPile = $this->Social->find('all');
+		$usedPile = $this->Social->find('all', array(
+			'conditions'	=> array(
+				'id !=' => $id
+			)
+		));
 		$used = Set::extract('/Social/service', $usedPile);
 		
 		$free = array_diff($base, $used);

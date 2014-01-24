@@ -23,7 +23,7 @@ class ImageUploaderComponent extends Component {
  * @return void
  * @link http://book.cakephp.org/2.0/en/controllers/components.html#Component::initialize
  */
-  public function initialize($controller) {
+  public function initialize(Controller $controller) {
     
   }
 
@@ -34,7 +34,7 @@ class ImageUploaderComponent extends Component {
  * @return void
  * @link http://book.cakephp.org/2.0/en/controllers/components.html#Component::startup
  */
-  public function startup($controller) {
+  public function startup(Controller $controller) {
   }
 
 /**
@@ -45,7 +45,7 @@ class ImageUploaderComponent extends Component {
  * @return void
  * @link http://book.cakephp.org/2.0/en/controllers/components.html#Component::beforeRender
  */
-  public function beforeRender($controller) {
+  public function beforeRender(Controller $controller) {
   }
 
 /**
@@ -55,7 +55,7 @@ class ImageUploaderComponent extends Component {
  * @return void
  * @link @link http://book.cakephp.org/2.0/en/controllers/components.html#Component::shutdown
  */
-  public function shutdown($controller) {
+  public function shutdown(Controller $controller) {
   }
 
 /**
@@ -77,7 +77,7 @@ class ImageUploaderComponent extends Component {
  * @return array|null Either an array or null.
  * @link @link http://book.cakephp.org/2.0/en/controllers/components.html#Component::beforeRedirect
  */
-  public function beforeRedirect( $controller, $url, $status = null, $exit = true) {
+  public function beforeRedirect(Controller $controller, $url, $status = null, $exit = true) {
   }
   
   

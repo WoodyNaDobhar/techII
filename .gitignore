@@ -23,3 +23,10 @@ Thumbs.db
 /etc
 /app/webroot/etc
 /_notes
+dwsync.xml
+/.buildpath
+/.project
+/.settings/.jsdtscope
+/.settings/org.eclipse.php.core.prefs
+/.settings/org.eclipse.wst.jsdt.ui.superType.container
+/.settings/org.eclipse.wst.jsdt.ui.superType.name

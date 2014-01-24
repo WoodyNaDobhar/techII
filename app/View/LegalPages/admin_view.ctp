@@ -38,10 +38,11 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Edit Legal Page'), array('action' => 'edit', $legalPage['LegalPage']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Legal Page'), array('action' => 'delete', $legalPage['LegalPage']['id']), null, __('Are you sure you want to delete # %s?', $legalPage['LegalPage']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Legal Pages'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Legal Page'), array('action' => 'add')); ?> </li>
+				<li><?php echo $this->Form->postLink(__('Delete Legal Page'), array('action' => 'delete', $legalPage['LegalPage']['id']), null, __('Are you sure you want to delete # %s?', $legalPage['LegalPage']['id'])); ?> </li>
+				<li><?php echo $this->Html->link(__('List Legal Pages'), array('action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Legal Page'), array('action' => 'add')); ?> </li>
 			</ul>
 		</div>
 			</div>

@@ -45,6 +45,8 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
+				<li><?php echo $this->Html->link(__('Users'), array('controller' => 'Users', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Socials'), array('controller' => 'Socials', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Splash Items'), array('controller' => 'Splashes', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Testimonials'), array('controller' => 'Testimonials', 'action' => 'index')); ?></li>
@@ -55,6 +57,8 @@
 				<li><?php echo $this->Html->link(__('Processes Pages'), array('controller' => 'ProcessesPages', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Products Pages'), array('controller' => 'ProductsPages', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Legals Pages'), array('controller' => 'LegalPages', 'action' => 'index')); ?></li>
+				<li><?php echo $this->Html->link(__('Lids'), array('controller' => 'Lids', 'action' => 'index')); ?></li>
+				<li><?php echo $this->Html->link(__('Containers'), array('controller' => 'Containers', 'action' => 'index')); ?></li>
 			</ul>
 		</div>
 	</div>

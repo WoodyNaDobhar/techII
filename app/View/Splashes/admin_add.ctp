@@ -15,7 +15,7 @@
 		echo $this->Form->input('shortdesc', array('class'=>'form-control placeholder'));
 		echo $this->Form->input('link', array('class'=>'form-control placeholder'));
 		echo $this->Form->input('image', array('type' => 'file'));
-		echo $this->Form->input('video', array('class'=>'form-control placeholder'));
+		echo $this->Form->input('video', array('class'=>'form-control placeholder', 'between'=>'<br><span>you MUST add ?wmode=transparent to the link in the youTube embedding url to prevent it from covering the nav menu.</span>'));
 	?>
 			</fieldset>
 		<?php echo $this->Form->button('Submit', array('class' => 'btn btn-primary')); ?>
@@ -24,9 +24,9 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
-		
-						<li><?php echo $this->Html->link(__('List Splashes'), array('action' => 'index')); ?></li>
-					</ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
+				<li><?php echo $this->Html->link(__('List Splashes'), array('action' => 'index')); ?></li>
+			</ul>
 		</div>
 	</div>
 </div>

@@ -98,7 +98,7 @@ class ContainersController extends AppController {
 			}
 			$this->Container->create();
 			if ($this->Container->save($this->request->data)) {
-				$this->Session->setFlash(__('The container has been saved.'));
+				$this->Session->setFlash(__('The container has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The container could not be saved. Please, try again.'));
@@ -147,7 +147,7 @@ class ContainersController extends AppController {
 				unset($this->request->data['Container']['image']);
 			}
 			if ($this->Container->save($this->request->data)) {
-				$this->Session->setFlash(__('The container has been saved.'));
+				$this->Session->setFlash(__('The container has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The container could not be saved. Please, try again.'));

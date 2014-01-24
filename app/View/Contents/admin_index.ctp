@@ -47,8 +47,9 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('New Content'), array('action' => 'add')); ?></li>
-					</ul>
+			</ul>
 		</div>
 	</div>
 </div>

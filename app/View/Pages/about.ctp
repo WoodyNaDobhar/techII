@@ -31,8 +31,8 @@
 				<h2 class="title-divider"><span><?=$pageContent['AboutPages']['name1']?> <span class="de-em"><?=$pageContent['AboutPages']['name2']?></span></span> <small><?=$pageContent['AboutPages']['description']?></small></h2>
 				<?=$pageContent['AboutPages']['content']?>
                 <?PHP
-				
-				if(true){
+                
+				if(isset($isContact) && $isContact){
 					?>
 				<div class="row">
 					<div class="col-md-6">

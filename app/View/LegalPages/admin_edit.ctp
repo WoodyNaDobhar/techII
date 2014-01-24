@@ -24,10 +24,10 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
-		
-						<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('LegalPage.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('LegalPage.id'))); ?></li>
-						<li><?php echo $this->Html->link(__('List Legal Pages'), array('action' => 'index')); ?></li>
-					</ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
+				<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('LegalPage.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('LegalPage.id'))); ?></li>
+				<li><?php echo $this->Html->link(__('List Legal Pages'), array('action' => 'index')); ?></li>
+			</ul>
 		</div>
 	</div>
 </div>

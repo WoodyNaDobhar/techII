@@ -43,10 +43,11 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Edit Product Page'), array('action' => 'edit', $productsPage['ProductsPage']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Product Page'), array('action' => 'delete', $productsPage['ProductsPage']['id']), null, __('Are you sure you want to delete # %s?', $productsPage['ProductsPage']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Product Pages'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Product Page'), array('action' => 'add')); ?> </li>
+				<li><?php echo $this->Form->postLink(__('Delete Product Page'), array('action' => 'delete', $productsPage['ProductsPage']['id']), null, __('Are you sure you want to delete # %s?', $productsPage['ProductsPage']['id'])); ?> </li>
+				<li><?php echo $this->Html->link(__('List Product Pages'), array('action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Product Page'), array('action' => 'add')); ?> </li>
 			</ul>
 		</div>
 			</div>

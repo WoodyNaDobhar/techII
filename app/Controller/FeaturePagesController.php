@@ -73,7 +73,7 @@ class FeaturePagesController extends AppController {
 			}
 			$this->FeaturePage->create();
 			if ($this->FeaturePage->save($this->request->data)) {
-				$this->Session->setFlash(__('The feature page has been saved.'));
+				$this->Session->setFlash(__('The feature page has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The feature page could not be saved. Please, try again.'));
@@ -118,7 +118,7 @@ class FeaturePagesController extends AppController {
 				unset($this->request->data['FeaturePage']['image']);
 			}
 			if ($this->FeaturePage->save($this->request->data)) {
-				$this->Session->setFlash(__('The feature page has been saved.'));
+				$this->Session->setFlash(__('The feature page has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The feature page could not be saved. Please, try again.'));

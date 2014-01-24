@@ -49,7 +49,7 @@ class CtypesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Ctype->create();
 			if ($this->Ctype->save($this->request->data)) {
-				$this->Session->setFlash(__('The ctype has been saved.'));
+				$this->Session->setFlash(__('The ctype has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The ctype could not be saved. Please, try again.'));
@@ -70,7 +70,7 @@ class CtypesController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Ctype->save($this->request->data)) {
-				$this->Session->setFlash(__('The ctype has been saved.'));
+				$this->Session->setFlash(__('The ctype has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The ctype could not be saved. Please, try again.'));

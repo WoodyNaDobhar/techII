@@ -178,7 +178,10 @@ class PagesController extends AppController {
 			//contact us
 			}elseif($path[0] == 'about' && $this->request->params['item'] == 2){
 				
-				//contact?
+				//let the page know to show the form
+				$this->set('isContact', TRUE);
+
+				//contact submitted
 				if(!empty($this->data)){
 					
 					//captcha setup

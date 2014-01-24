@@ -73,7 +73,7 @@ class ProcessesPagesController extends AppController {
 			}
 			$this->ProcessesPage->create();
 			if ($this->ProcessesPage->save($this->request->data)) {
-				$this->Session->setFlash(__('The processes page has been saved.'));
+				$this->Session->setFlash(__('The processes page has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The processes page could not be saved. Please, try again.'));
@@ -118,7 +118,7 @@ class ProcessesPagesController extends AppController {
 				unset($this->request->data['ProcessPage']['nav_image']);
 			}
 			if ($this->ProcessesPage->save($this->request->data)) {
-				$this->Session->setFlash(__('The processes page has been saved.'));
+				$this->Session->setFlash(__('The processes page has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The processes page could not be saved. Please, try again.'));

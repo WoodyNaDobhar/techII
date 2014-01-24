@@ -50,7 +50,7 @@ class LegalPagesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->LegalPage->create();
 			if ($this->LegalPage->save($this->request->data)) {
-				$this->Session->setFlash(__('The legal page has been saved.'));
+				$this->Session->setFlash(__('The legal page has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The legal page could not be saved. Please, try again.'));
@@ -71,7 +71,7 @@ class LegalPagesController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->LegalPage->save($this->request->data)) {
-				$this->Session->setFlash(__('The legal page has been saved.'));
+				$this->Session->setFlash(__('The legal page has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The legal page could not be saved. Please, try again.'));

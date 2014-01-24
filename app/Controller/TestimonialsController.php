@@ -73,7 +73,7 @@ class TestimonialsController extends AppController {
 			}
 			$this->Testimonial->create();
 			if ($this->Testimonial->save($this->request->data)) {
-				$this->Session->setFlash(__('The testimonial has been saved.'));
+				$this->Session->setFlash(__('The testimonial has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The testimonial could not be saved. Please, try again.'));
@@ -118,7 +118,7 @@ class TestimonialsController extends AppController {
 				unset($this->request->data['Testimonial']['image']);
 			}
 			if ($this->Testimonial->save($this->request->data)) {
-				$this->Session->setFlash(__('The testimonial has been saved.'));
+				$this->Session->setFlash(__('The testimonial has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The testimonial could not be saved. Please, try again.'));

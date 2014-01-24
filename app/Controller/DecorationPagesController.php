@@ -73,7 +73,7 @@ class DecorationPagesController extends AppController {
 			}
 			$this->DecorationPage->create();
 			if ($this->DecorationPage->save($this->request->data)) {
-				$this->Session->setFlash(__('The decoration page has been saved.'));
+				$this->Session->setFlash(__('The decoration page has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The decoration page could not be saved. Please, try again.'));
@@ -118,7 +118,7 @@ class DecorationPagesController extends AppController {
 				unset($this->request->data['DecorationPage']['nav_image']);
 			}
 			if ($this->DecorationPage->save($this->request->data)) {
-				$this->Session->setFlash(__('The decoration page has been saved.'));
+				$this->Session->setFlash(__('The decoration page has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The decoration page could not be saved. Please, try again.'));

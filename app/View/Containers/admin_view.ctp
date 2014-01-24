@@ -73,16 +73,16 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
-				<li><?php echo $this->Html->link(__('Edit Container'), array('action' => 'edit', $container['Container']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Container'), array('action' => 'delete', $container['Container']['id']), null, __('Are you sure you want to delete # %s?', $container['Container']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Containers'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Container'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Ctypes'), array('controller' => 'ctypes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Ctype'), array('controller' => 'ctypes', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Resins'), array('controller' => 'resins', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Resin'), array('controller' => 'resins', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Lids'), array('controller' => 'lids', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Lid'), array('controller' => 'lids', 'action' => 'add')); ?> </li>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
+				<li><?php echo $this->Form->postLink(__('Delete Container'), array('action' => 'delete', $container['Container']['id']), null, __('Are you sure you want to delete # %s?', $container['Container']['id'])); ?> </li>
+				<li><?php echo $this->Html->link(__('List Containers'), array('action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Container'), array('action' => 'add')); ?> </li>
+				<li><?php echo $this->Html->link(__('List Ctypes'), array('controller' => 'ctypes', 'action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Ctype'), array('controller' => 'ctypes', 'action' => 'add')); ?> </li>
+				<li><?php echo $this->Html->link(__('List Resins'), array('controller' => 'resins', 'action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Resin'), array('controller' => 'resins', 'action' => 'add')); ?> </li>
+				<li><?php echo $this->Html->link(__('List Lids'), array('controller' => 'lids', 'action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Lid'), array('controller' => 'lids', 'action' => 'add')); ?> </li>
 			</ul>
 		</div>
 				<div class="related">

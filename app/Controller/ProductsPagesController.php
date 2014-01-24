@@ -37,7 +37,7 @@ class ProductsPagesController extends AppController {
 			throw new NotFoundException(__('Invalid product page'));
 		}
 		$options = array('conditions' => array('ProductsPage.' . $this->ProductsPage->primaryKey => $id));
-		$this->set('productsPages', $this->ProductsPage->find('first', $options));
+		$this->set('productsPage', $this->ProductsPage->find('first', $options));
 	}
 
 /**
@@ -73,7 +73,7 @@ class ProductsPagesController extends AppController {
 			}
 			$this->ProductsPage->create();
 			if ($this->ProductsPage->save($this->request->data)) {
-				$this->Session->setFlash(__('The product page has been saved.'));
+				$this->Session->setFlash(__('The product page has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The product page could not be saved. Please, try again.'));
@@ -118,7 +118,7 @@ class ProductsPagesController extends AppController {
 				unset($this->request->data['ProductsPage']['nav_image']);
 			}
 			if ($this->ProductsPage->save($this->request->data)) {
-				$this->Session->setFlash(__('The product page has been saved.'));
+				$this->Session->setFlash(__('The product page has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The product page could not be saved. Please, try again.'));

@@ -66,7 +66,7 @@
 						<a href="#product<?=$product[$type]['id']?>-modal" data-toggle="modal" class="productDetail" productId="<?=$product[$type]['id']?>" productType="<?=$type?>">
 							<span class="inner-wrapper">
 								<span class="img-wrapper">
-									<img src="/img/<?=strtolower($type).'s'?>/<?=$product[$type]['image']?>" alt="<?=$product[$type]['name']?>" />
+									<img src="<?=$product[$type]['image']?>" alt="<?=$product[$type]['name']?>" />
 								</span>
 								<span class="title">
 									<?=$product[$type]['name']?>

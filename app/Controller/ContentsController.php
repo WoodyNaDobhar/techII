@@ -49,7 +49,7 @@ class ContentsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Content->create();
 			if ($this->Content->save($this->request->data)) {
-				$this->Session->setFlash(__('The content has been saved.'));
+				$this->Session->setFlash(__('The content has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The content could not be saved. Please, try again.'));
@@ -70,7 +70,7 @@ class ContentsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Content->save($this->request->data)) {
-				$this->Session->setFlash(__('The content has been saved.'));
+				$this->Session->setFlash(__('The content has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The content could not be saved. Please, try again.'));

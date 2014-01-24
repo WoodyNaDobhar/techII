@@ -32,8 +32,8 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
-		
-						<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Container.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Container.id'))); ?></li>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
+				<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Container.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Container.id'))); ?></li>
 						<li><?php echo $this->Html->link(__('List Containers'), array('action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('List Ctypes'), array('controller' => 'ctypes', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Ctype'), array('controller' => 'ctypes', 'action' => 'add')); ?> </li>

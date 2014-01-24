@@ -43,10 +43,11 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Edit Feature Page'), array('action' => 'edit', $featurePage['FeaturePage']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Feature Page'), array('action' => 'delete', $featurePage['FeaturePage']['id']), null, __('Are you sure you want to delete # %s?', $featurePage['FeaturePage']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Feature Pages'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Feature Page'), array('action' => 'add')); ?> </li>
+				<li><?php echo $this->Form->postLink(__('Delete Feature Page'), array('action' => 'delete', $featurePage['FeaturePage']['id']), null, __('Are you sure you want to delete # %s?', $featurePage['FeaturePage']['id'])); ?> </li>
+				<li><?php echo $this->Html->link(__('List Feature Pages'), array('action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Feature Page'), array('action' => 'add')); ?> </li>
 			</ul>
 		</div>
 			</div>

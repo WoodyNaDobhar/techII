@@ -33,10 +33,11 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Edit About Page'), array('action' => 'edit', $aboutPage['AboutPage']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete About Page'), array('action' => 'delete', $aboutPage['AboutPage']['id']), null, __('Are you sure you want to delete # %s?', $aboutPage['AboutPage']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List About Pages'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New About Page'), array('action' => 'add')); ?> </li>
+				<li><?php echo $this->Form->postLink(__('Delete About Page'), array('action' => 'delete', $aboutPage['AboutPage']['id']), null, __('Are you sure you want to delete # %s?', $aboutPage['AboutPage']['id'])); ?> </li>
+				<li><?php echo $this->Html->link(__('List About Pages'), array('action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New About Page'), array('action' => 'add')); ?> </li>
 			</ul>
 		</div>
 			</div>

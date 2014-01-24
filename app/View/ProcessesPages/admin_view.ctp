@@ -43,11 +43,12 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Edit Process Page'), array('action' => 'edit', $processesPage['ProcessesPage']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Process Page'), array('action' => 'delete', $processesPage['ProcessesPage']['id']), null, __('Are you sure you want to delete # %s?', $processesPage['ProcessesPage']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Process Pages'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Process Page'), array('action' => 'add')); ?> </li>
+				<li><?php echo $this->Form->postLink(__('Delete Process Page'), array('action' => 'delete', $processesPage['ProcessesPage']['id']), null, __('Are you sure you want to delete # %s?', $processesPage['ProcessesPage']['id'])); ?> </li>
+				<li><?php echo $this->Html->link(__('List Process Pages'), array('action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Process Page'), array('action' => 'add')); ?> </li>
 			</ul>
 		</div>
-			</div>
+	</div>
 </div>

@@ -51,7 +51,7 @@
 			<ul>
 				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('New News'), array('action' => 'add')); ?></li>
-					</ul>
+			</ul>
 		</div>
 	</div>
 </div>

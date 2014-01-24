@@ -18,14 +18,15 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Edit Ctype'), array('action' => 'edit', $ctype['Ctype']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Ctype'), array('action' => 'delete', $ctype['Ctype']['id']), null, __('Are you sure you want to delete # %s?', $ctype['Ctype']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Ctypes'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Ctype'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Containers'), array('controller' => 'containers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Container'), array('controller' => 'containers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Lids'), array('controller' => 'lids', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Lid'), array('controller' => 'lids', 'action' => 'add')); ?> </li>
+				<li><?php echo $this->Form->postLink(__('Delete Ctype'), array('action' => 'delete', $ctype['Ctype']['id']), null, __('Are you sure you want to delete # %s?', $ctype['Ctype']['id'])); ?> </li>
+				<li><?php echo $this->Html->link(__('List Ctypes'), array('action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Ctype'), array('action' => 'add')); ?> </li>
+				<li><?php echo $this->Html->link(__('List Containers'), array('controller' => 'containers', 'action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Container'), array('controller' => 'containers', 'action' => 'add')); ?> </li>
+				<li><?php echo $this->Html->link(__('List Lids'), array('controller' => 'lids', 'action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Lid'), array('controller' => 'lids', 'action' => 'add')); ?> </li>
 			</ul>
 		</div>
 				<div class="related">

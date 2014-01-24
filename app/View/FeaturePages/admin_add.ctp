@@ -24,9 +24,9 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
-		
-						<li><?php echo $this->Html->link(__('List Feature Pages'), array('action' => 'index')); ?></li>
-					</ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
+				<li><?php echo $this->Html->link(__('List Feature Pages'), array('action' => 'index')); ?></li>
+			</ul>
 		</div>
 	</div>
 </div>

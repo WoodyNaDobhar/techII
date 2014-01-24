@@ -38,11 +38,12 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Edit Social'), array('action' => 'edit', $social['Social']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Social'), array('action' => 'delete', $social['Social']['id']), null, __('Are you sure you want to delete # %s?', $social['Social']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Socials'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Social'), array('action' => 'add')); ?> </li>
+				<li><?php echo $this->Form->postLink(__('Delete Social'), array('action' => 'delete', $social['Social']['id']), null, __('Are you sure you want to delete # %s?', $social['Social']['id'])); ?> </li>
+				<li><?php echo $this->Html->link(__('List Socials'), array('action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Social'), array('action' => 'add')); ?> </li>
 			</ul>
 		</div>
-			</div>
+	</div>
 </div>

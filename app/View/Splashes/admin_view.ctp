@@ -43,11 +43,12 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
+				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('Edit Splash'), array('action' => 'edit', $splash['Splash']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Splash'), array('action' => 'delete', $splash['Splash']['id']), null, __('Are you sure you want to delete # %s?', $splash['Splash']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Splashes'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Splash'), array('action' => 'add')); ?> </li>
+				<li><?php echo $this->Form->postLink(__('Delete Splash'), array('action' => 'delete', $splash['Splash']['id']), null, __('Are you sure you want to delete # %s?', $splash['Splash']['id'])); ?> </li>
+				<li><?php echo $this->Html->link(__('List Splashes'), array('action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Splash'), array('action' => 'add')); ?> </li>
 			</ul>
 		</div>
-			</div>
+	</div>
 </div>

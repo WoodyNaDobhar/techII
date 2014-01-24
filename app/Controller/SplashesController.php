@@ -73,7 +73,7 @@ class SplashesController extends AppController {
 			}
 			$this->Splash->create();
 			if ($this->Splash->save($this->request->data)) {
-				$this->Session->setFlash(__('The splash has been saved.'));
+				$this->Session->setFlash(__('The splash has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The splash could not be saved. Please, try again.'));
@@ -118,7 +118,7 @@ class SplashesController extends AppController {
 				unset($this->request->data['Splash']['image']);
 			}
 			if ($this->Splash->save($this->request->data)) {
-				$this->Session->setFlash(__('The splash has been saved.'));
+				$this->Session->setFlash(__('The splash has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The splash could not be saved. Please, try again.'));

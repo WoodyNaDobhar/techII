@@ -49,7 +49,7 @@ class SettingsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Setting->create();
 			if ($this->Setting->save($this->request->data)) {
-				$this->Session->setFlash(__('The setting has been saved.'));
+				$this->Session->setFlash(__('The setting has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The setting could not be saved. Please, try again.'));
@@ -70,7 +70,7 @@ class SettingsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Setting->save($this->request->data)) {
-				$this->Session->setFlash(__('The setting has been saved.'));
+				$this->Session->setFlash(__('The setting has been saved.'), 'errorless_message');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The setting could not be saved. Please, try again.'));
