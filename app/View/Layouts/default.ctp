@@ -81,64 +81,64 @@
 						<div class="navbar-collapse collapse"> 
 							
 							<!--main navigation-->
-							<ul class="nav navbar-nav">
-								<li><a href="about.htm" class="menu-item">About Us</a></li>
-								<li class="dropdown"> <a href="#" class="dropdown-toggle menu-item" id="features-drop" data-toggle="dropdown">Products</a>
-									<ul class="dropdown-menu mega-menu" role="menu" aria-labelledby="features-drop">
-										<li role="presentation">
-											<ul class="row list-unstyled" role="menu">
-												<li class="col-md-4" role="presentation">
-													<a role="menuitem" href="containers.htm" class="img-link"><img src="img/features/container.png" alt="Containers" /></a>
-													<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Containers</strong></a>
-													<span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span>
-												</li>
-												<li class="col-md-4" role="presentation">
-													<a role="menuitem" href="lids.htm" class="img-link"><img src="img/features/lids.png" alt="Lids" /></a>
-													<a role="menuitem" href="lids.htm" tabindex="-1" class="menu-item"><strong>Lids</strong></a>
-													<span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span>
-												</li>
-												<li class="col-md-4" role="presentation">
-													<a role="menuitem" href="specialty.htm" class="img-link"><img src="img/features/feature-3.png" alt="Specialy" /></a>
-													<a role="menuitem" href="specialty.htm" tabindex="-1" class="menu-item"><strong>Specialty</strong></a>
-													<span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span>
-												</li>
-												<li class="col-md-4" role="presentation">
-													<a role="menuitem" href="sheet.htm" class="img-link"><img src="img/features/feature-4.png" alt="Sheet (Extruded)" /></a>
-													<a role="menuitem" href="sheet.htm" tabindex="-1" class="menu-item"><strong>Sheet (Extruded)</strong></a>
-													<span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span>
-												</li>
-											</ul>
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle menu-item" id="features-drop" data-toggle="dropdown">Products</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="features-drop">
+								<li role="presentation">
+									<ul class="row list-unstyled" role="menu">
+										<li class="dropdown-header" role="presentation">
+											Products
+										</li>
+										<li class="col-md-12" role="presentation">
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Containers</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Overcaps</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Extrusion</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Barrier</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Build YOUR Package</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Product Finder</strong></a>
 										</li>
 									</ul>
 								</li>
-								<li class="dropdown"> <a href="#" class="dropdown-toggle menu-item" id="features-drop" data-toggle="dropdown">Processes</a>
-									<ul class="dropdown-menu mega-menu" role="menu" aria-labelledby="features-drop">
-										<li role="presentation">
-											<ul class="row list-unstyled" role="menu">
-												<li class="col-md-4" role="presentation">
-													<a role="menuitem" href="injection.htm" class="img-link"><img src="img/features/feature-3.png" alt="Injection" /></a>
-													<a role="menuitem" href="injection.htm" tabindex="-1" class="menu-item"><strong>Injection</strong></a>
-													<span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span>
-												</li>
-												<li class="col-md-4" role="presentation">
-													<a role="menuitem" href="thermoform.htm" class="img-link"><img src="img/features/feature-3.png" alt="Thermoform" /></a>
-													<a role="menuitem" href="thermoform.htm" tabindex="-1" class="menu-item"><strong>Thermoform</strong></a>
-													<span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span>
-												</li>
-												<li class="col-md-4" role="presentation">
-													<a role="menuitem" href="extrusion.htm" class="img-link"><img src="img/features/feature-3.png" alt="Extrusion" /></a>
-													<a role="menuitem" href="extrusion.htm" tabindex="-1" class="menu-item"><strong>Extrusion</strong></a>
-													<span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li class="logo-spacer">&nbsp;</li>
-								<li><a href="decoration.htm" class="menu-item">Decoration</a></li>
-								<li><a href="prodDev.htm" class="menu-item">Development</a></li>
-								<li><a href="contact.htm" class="menu-item">Contact</a></li>
 							</ul>
+						</li>
+						<li class="dropdown"> <a href="#" class="dropdown-toggle menu-item" id="features-drop" data-toggle="dropdown">Decoration</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="features-drop">
+								<li role="presentation">
+									<ul class="row list-unstyled" role="menu">
+										<li class="dropdown-header" role="presentation">
+											Decoration
+										</li>
+										<li class="col-md-12" role="presentation">
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>IML</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Print</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Emboss</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Label</strong></a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="logo-spacer">&nbsp;</li>
+						<li class="dropdown"> <a href="#" class="dropdown-toggle menu-item" id="features-drop" data-toggle="dropdown">Sustainability</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="features-drop">
+								<li role="presentation">
+									<ul class="row list-unstyled" role="menu">
+										<li class="dropdown-header" role="presentation">
+											Sustainability
+										</li>
+										<li class="col-md-12" role="presentation">
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Recyclable</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Self Sufficient</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Expanded PP</strong></a>
+											<a role="menuitem" href="containers.htm" tabindex="-1" class="menu-item"><strong>Biodegradable</strong></a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="about.htm" class="menu-item">About Us</a></li>
+					</ul>
 						</div>
 						<!--/.navbar-collapse --> 
 						<i class="fa fa-search" id="searchIcon"></i>

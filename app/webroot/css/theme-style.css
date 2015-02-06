@@ -5182,13 +5182,15 @@ a:hover .icon-inverse-80 {
 	width: 50%;
 	height: 60px;
 	display: inline-block;
-	padding: 0px 10px;
+	padding: 0px 10px 25px;
 	font-size: 32px;
-	background-color: #828282;
-	border-color: #828282;
+	background-color: #FFFFFF;
 	box-shadow: none;
-	color: #000000;
-	padding-bottom: 25px;
+	color: #4081B2;
+	border-color: #FFFFFF;
+	border-width: 3px;
+	font-family: Impact, Charcoal, sans-serif;
+	text-transform: uppercase;
 }
 @media (min-width: 768px) {
 	.navbar-collapse.collapse {
@@ -5227,19 +5229,19 @@ a:hover .icon-inverse-80 {
 	    right: 40px;
 	}
 	.search-button{
-	    display:inline-block;
-	    width:60px;
-	    height:60px;
-	    line-height:50px;
-	    border: 2px solid #f5f5f5;
-	    border-radius: 50%;
-	    color:#f5f5f5;
-	    text-align:center;
-	    text-decoration:none;
-	    background: #464646;
-	    box-shadow: 0 0 3px gray;
-	    font-size:20px;
-	    font-weight:bold;
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		line-height: 50px;
+		border: 2px solid #FFFFFF;
+		border-radius: 50%;
+		color: #FFFFFF;
+		text-align: center;
+		text-decoration: none;
+		box-shadow: 0px 0px 3px #808080;
+		font-size: 20px;
+		font-weight: bold;
+		background: none repeat scroll 0% 0% #4081B2;
 	}
 	#search input{
 		width: 70%;
@@ -5340,8 +5342,8 @@ a:hover .icon-inverse-80 {
 		-webkit-transition: all 0.4s ease-out;
 		transition: all 0.4s ease-out;
 		padding: 45px 0px 2px 0px;
-		margin: 0px 13px;
-		font-size: 16px;
+		margin: 0px 11%;
+		font-size: 24px;
 		color: #5F604B;
 		background-color: #FFFFFF;
 		font-weight: 700;
@@ -5497,6 +5499,7 @@ a:hover .icon-inverse-80 {
 		color: rgba(27, 27, 27, 0.8);
 		background: #ffffff;
 		position: absolute;
+		opacity: 0.9;
 	}
 	.dropdown-menu .divider {
 		height: 2px;
@@ -5549,10 +5552,10 @@ a:hover .icon-inverse-80 {
 		border-radius: 0;
 		-webkit-box-shadow: 0;
 		box-shadow: 0;
-		background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f2f2f2));
-		background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f2f2f2, 100%);
-		background-image: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
-		background-image: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+		background-image: -webkit-gradient(linear, left 0%, left 100%, from(#F0F0F0), to(#F4F4F4));
+		background-image: -webkit-linear-gradient(top, #F0F0F0, 0%, #F4F4F4, 100%);
+		background-image: -moz-linear-gradient(top, #F0F0F0 0%, #F4F4F4 100%);
+		background-image: linear-gradient(to bottom, #F0F0F0 0%, #F4F4F4 100%);
 		background-repeat: repeat-x;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
 		border-bottom: 1px solid #e6e6e6;
@@ -5576,10 +5579,8 @@ a:hover .icon-inverse-80 {
 	.dropdown-menu li a.menu-item:hover {
 		color: #333;
 		color: rgba(27, 27, 27, 0.8);
-		border-bottom-color: #4081b2;
+		border-bottom: 0;
 		background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#e6e6e6));
-
-
 		background-image: -webkit-linear-gradient(top, #ffffff, 0%, #e6e6e6, 100%);
 		background-image: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
 		background-image: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
@@ -5608,8 +5609,6 @@ a:hover .icon-inverse-80 {
 		background: #e6e6e6;
 	}
 	.dropdown-menu [class*="col-"] {
-		float: left;
-		padding: 10px;
 	}
 	.menu-title,
 	.dropdown-header,
@@ -5617,15 +5616,16 @@ a:hover .icon-inverse-80 {
 	.dropdown-menu li.dropdown-header,
 	.dropdown-footer,
 	.dropdown-menu li.dropdown-footer {
-		font-weight: bold;
-		font-size: 12px;
+		font-size: 24px;
 		padding: 5px 10px;
 		margin-top: 10px;
-		margin-bottom: 5px;
-		border-bottom: 2px solid #e6e6e6;
+		border-bottom: 2px solid #E6E6E6;
 		display: block;
 		float: none;
-		color: #1b1b1b;
+		color: #1B1B1B;
+		font-family: Impact, Charcoal, sans-serif;
+		text-align: center;
+		letter-spacing: 1px;
 	}
 	.menu-title:first-child,
 	.dropdown-header:first-child,
