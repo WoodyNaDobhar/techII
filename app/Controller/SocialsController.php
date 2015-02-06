@@ -111,20 +111,24 @@ class SocialsController extends AppController {
 	 * Get all the social services not currently in use
 	 * @return multitype:
 	 */
-	function getFreeServices($id){
+	function getFreeServices($id = null){
 		
 		//the whole list
 		$base = Configure::read('socials');
 		
 		//what we're already using
-		$usedPile = $this->Social->find('all', array(
-			'conditions'	=> array(
-				'id !=' => $id
-			)
-		));
-		$used = Set::extract('/Social/service', $usedPile);
-		
-		$free = array_diff($base, $used);
+		if($id){
+			$usedPile = $this->Social->find('all', array(
+				'conditions'	=> array(
+					'id !=' => $id
+				)
+			));
+			$used = Set::extract('/Social/service', $usedPile);
+			
+			$free = array_diff($base, $used);
+		}else{
+			$free = $base;
+		}
 		
 		return $free;
 	}

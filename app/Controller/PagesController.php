@@ -69,20 +69,6 @@ class PagesController extends AppController {
 
 		//index
 		if($path[0] == 'home'){
-			
-			//splashes
-			$this->loadModel('Splashes');
-			$homeSplashes = $this->Splashes->find('all');
-			$this->set('homeSplashes', $homeSplashes);
-		
-			//features
-			$this->loadModel('FeaturePages');
-			$homeFeatures = $this->FeaturePages->find('all', array(
-				'limit'	=> '3',
-				'order'	=> 'id DESC'
-			));
-			$homeFeatures = array_reverse($homeFeatures);
-			$this->set('homeFeatures', $homeFeatures);
 		
 			//testimonials
 			$this->loadModel('Testimonials');

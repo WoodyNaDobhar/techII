@@ -69,6 +69,7 @@
 			<ul>
 				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('New Lid'), array('action' => 'add')); ?></li>
+				<li><?php echo $this->Html->link(__('Bulk Lid Upload'), '#lid-modal',  array('data-toggle' => 'modal')); ?> </li>
 				<li><?php echo $this->Html->link(__('List Ctypes'), array('controller' => 'ctypes', 'action' => 'index')); ?> </li>
 				<li><?php echo $this->Html->link(__('New Ctype'), array('controller' => 'ctypes', 'action' => 'add')); ?> </li>
 				<li><?php echo $this->Html->link(__('List Resins'), array('controller' => 'resins', 'action' => 'index')); ?> </li>

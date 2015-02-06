@@ -21,7 +21,7 @@
  // wrap definitions in body tag
  // ie.
  // body .navbar-inner {
- //   background: #ff0000;
+ //	 background: #ff0000;
  // }
  // 
  /////////////////////////////////////////////////////////////////////*/
@@ -30,20 +30,154 @@
  * 1. General Elements
  *--------------------------------------------------
  */
+.h6 {
+	font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+} 
 #navigation {
-  /* 1. Navigation wrapper */
+	/* 1. Navigation wrapper */
+}
+.navbar-nav > li > a:hover,
+#main-menu > li > a:hover,
+.navbar-nav > li.active a,
+#main-menu > li.active a {
+	background-color: #FFFFFF;
+	color: #4081b2;
+}
+.navbar-nav > li.open .dropdown-toggle, 
+#main-menu > li.open .dropdown-toggle, 
+.navbar-nav > li.open.active .dropdown-toggle, 
+#main-menu > li.open.active .dropdown-toggle {
+	background-color: #FFFFFF;
+	color: #4081b2;
 }
 #highlighted {
-  /* 2. Highlighted (below header) wrapper */
+	/* 2. Highlighted (below header) wrapper */
+	margin-top: 20px;
+}
+.slide .slide-splash {
+	text-align: center;
+}
+.page-highlighted{
+	padding-top: 2px !important;
+}
+.bounce-data{
+	background-color: rgba(130,130,130, 0.5);
+	border-radius: 25px;
+}
+.bounce-data p{
+	font-size: 16px;
+	font-weight: bold !important;
+}
+.slide .slide-splash h1,
+.slide .slide-splash h2,
+.slide .slide-splash h3,
+.slide .slide-splash h4,
+.slide .slide-splash h5,
+.slide .slide-splash p {
+	margin-top: 0;
+	font-weight: normal;
+	color: #FFFFFF;
+	background: none;
+}
+.slide .slide-splash h2{
+	font-size: 36px;
+}
+.slide .slide-splash h4{
+	font-size: 24px;
+}
+.slide .slide-splash .btn {
+	margin: 0;
+}
+.slide .slide-splash .inverse {
+	background: #1b1b1b;
+	color: #ffffff;
+	padding: 5px;
+	display: inline-block;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+.slide .slide-splash .inverse a {
+	color: rgba(255, 255, 255, 0.9);
+}
+#flexslidernarrow .slides li{
+	border-right: 1px solid;
+	height: 201px;
+}
+#flexslidernarrow .slides img {
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.middleHelper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 #content {
-  /* 3. Content wrapper */
+	/* 3. Content wrapper */
 }
 #content-below {
-  /* 4. Content Below wrapper */
+	/* 4. Content Below wrapper */
+}
+.product-buttons{
+	display: block;
+	font-weight: bold;
+}
+#googlemaps-container-top {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25) inset;
+    height: 20px;
+}
+#googlemaps {
+    position: relative;
+    z-index: 1;
+    height: 400px;
+    width: 100%;
+    top: -20px;
+}
+#googlemaps-container-bottom {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.25) inset;
+    height: 20px;
+    margin-top: -40px;
+    border-bottom: 5px solid #F6F6F6;
+    margin-bottom: 20px;
+}
+.footer-link{
+	font-weight:bold;
+}
+.footer-link:hover{
+	font-weight:bold;
+	text-decoration: none;
+}
+.footer-nav > li > a:link,
+.footer-nav > li > a:hover{
+	background: none repeat scroll 0% 0% transparent;
+	padding-top: 0px;
+}
+#footer a {
+	color: #CCCCCC;
+}
+#footer a:hover{
+	color: #4081b2;
+}
+.footer-item{
+	display: none;
+	position: absolute;
+	top: -100px;
+	width: 150px;
+	background-color: #828282;
+	padding: 10px;
+	list-style: none outside none;
+}
+.footer-item a:hover{
+	text-decoration: none;
 }
 #footer {
-  /* 5. Footer wrapper */
+	/* 5. Footer wrapper */
 }
 /*
  * --------------------------------------------------
@@ -56,10 +190,10 @@
  *--------------------------------------------------
  */
 @media (min-width: 992px) {
-  
+	
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  
+	
 }
 /*
  * --------------------------------------------------
