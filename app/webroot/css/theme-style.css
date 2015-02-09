@@ -5346,7 +5346,8 @@ a:hover .icon-inverse-80 {
 		font-size: 24px;
 		color: #5F604B;
 		background-color: #FFFFFF;
-		font-weight: 700;
+		font-family: Impact, Charcoal, sans-serif;
+		letter-spacing: 1.1px;
 	}
 	.navbar-nav > li > a:hover,
 	#main-menu > li > a:hover,

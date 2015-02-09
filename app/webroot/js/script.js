@@ -217,8 +217,8 @@ $(document).ready(function() {
 	$('.flexslider').resize(); //make sure height is right load assets loaded
 	$('#flexslidernarrow').flexslider({
 		animation: "slide",
-	    itemWidth: 210,
-	    itemMargin: 5
+		itemWidth: 210,
+		itemMargin: 5
 	});
 	
 	//Plugin: jQuery Quicksand plugin
@@ -299,4 +299,47 @@ $(document).ready(function() {
 		],
 
 	});
+	
+	//big search button
+	$('#searchBigButton').bind('mouseover', function (){
+		$('#searchBigButton').attr('src', '/img/home/search-hover.png');
+	});
+	$('#searchBigButton').bind('mouseout', function (){
+		$('#searchBigButton').attr('src', '/img/home/search.png');
+	});
+	$("#searchBigButton").click(function(e) {
+		e.preventDefault();
+		toggleSearch();
+	});
+	
+	//resising home video
+	// Find all YouTube videos
+	var $allVideos = $("iframe[src^='https://www.youtube.com']"),
+
+	// The element that is fluid width
+	$fluidEl = $("#homeVideo");
+
+	// Figure out and save aspect ratio for each video
+	$allVideos.each(function() {
+		$(this)
+			.data('aspectRatio', this.height / this.width)
+			// and remove the hard coded width/height
+			.removeAttr('height')
+			.removeAttr('width');
+	});
+
+	// When the window is resized
+	// (You'll probably want to debounce this)
+	$(window).resize(function() {
+
+		var newWidth = $fluidEl.width();
+		// Resize all videos according to their own aspect ratio
+		$allVideos.each(function() {
+			var $el = $(this);
+			$el
+				.width(newWidth)
+				.height(newWidth * $el.data('aspectRatio'));
+		});
+	// Kick off one resize to fix all videos on page load
+	}).resize();
 });

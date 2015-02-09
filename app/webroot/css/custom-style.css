@@ -105,14 +105,14 @@
 	height: 201px;
 }
 #flexslidernarrow .slides img {
-    width: 100%;
-    vertical-align: middle;
-    display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+	display: inline-block;
 }
 .middleHelper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 }
 #content {
 	/* 3. Content wrapper */
@@ -125,26 +125,26 @@
 	font-weight: bold;
 }
 #googlemaps-container-top {
-    position: relative;
-    z-index: 2;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25) inset;
-    height: 20px;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25) inset;
+	height: 20px;
 }
 #googlemaps {
-    position: relative;
-    z-index: 1;
-    height: 400px;
-    width: 100%;
-    top: -20px;
+	position: relative;
+	z-index: 1;
+	height: 400px;
+	width: 100%;
+	top: -20px;
 }
 #googlemaps-container-bottom {
-    position: relative;
-    z-index: 2;
-    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.25) inset;
-    height: 20px;
-    margin-top: -40px;
-    border-bottom: 5px solid #F6F6F6;
-    margin-bottom: 20px;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.25) inset;
+	height: 20px;
+	margin-top: -40px;
+	border-bottom: 5px solid #F6F6F6;
+	margin-bottom: 20px;
 }
 .footer-link{
 	font-weight:bold;
@@ -201,3 +201,61 @@
  * Other stuff
  *--------------------------------------------------
  */
+ 
+#searchBigButton,
+#buildBigButton,
+.frontAd,
+.frontDecoration,
+.frontLids,
+.frontContainers {
+	max-width: 100%;
+}
+a.homeHover {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	padding: 20px 0 10px 15px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 72px;
+	line-height: 1.05;
+	background: rgba(130, 130, 130, 0.52);
+	text-shadow: 1px 5px 18px rgba(0,0,0,0.45);
+	font-family: Impact,Charcoal,sans-serif;
+	opacity: 0;
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	-ms-transition: opacity .3s;
+	transition: opacity .3s;
+}
+a.homeHover:empty {
+	background: transparent;
+}
+a.homeHover:hover {
+	opacity: 1;
+}
+a.homeHover > span {
+	position: absolute;
+	left: 5px;
+	bottom: 0px;
+	right: 0px;
+	color: #4081B2;
+}
+a.homeHover > span:after {
+	content: '';
+	display: inline-block;
+	width: 33px;
+	height: 42px;
+	margin-left: 15px;
+}
+a.homeHover img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
