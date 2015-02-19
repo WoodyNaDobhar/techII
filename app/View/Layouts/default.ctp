@@ -257,6 +257,7 @@
 		echo $this->Html->script('jquery.min');
 		echo $this->Html->script('jquery-migrate-1.2.1.min');
 		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->script('embed-player');
 		echo $this->Html->script('/plugins/flexslider/jquery.flexslider-min');
 		echo $this->Html->script('/plugins/jPanelMenu/jquery.jpanelmenu.min');
 		echo $this->Html->script('/plugins/jRespond/js/jRespond');
@@ -264,7 +265,7 @@
 		echo $this->Html->script('http://maps.google.com/maps/api/js?sensor=true');
 		echo $this->Html->script('jquery.gmap.min.js');
 		echo $this->Html->script('script');
-		echo $this->Html->script('/plugins/ckeditor/ckeditor.js');
+		echo $this->Html->script('/plugins/ckeditor/ckeditor');
 		echo $this->Html->script('/plugins/tweetie/tweetie.js');
 		
 	?>
