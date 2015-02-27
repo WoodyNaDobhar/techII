@@ -13,6 +13,7 @@
 		echo $this->Form->input('id', array('class'=>'form-control placeholder'));
 		echo $this->Form->input('username', array('class'=>'form-control placeholder'));
 		echo $this->Form->input('password', array('class'=>'form-control placeholder'));
+		echo $this->Form->input('password_confirm', array('class'=>'form-control placeholder', 'type'=>'password'));
 		echo $this->Form->input('email', array('class'=>'form-control placeholder'));
 		echo $this->Form->input('role', array('class'=>'form-control placeholder'));
 		echo $this->Form->input('status', array('class'=>'form-control placeholder'));
