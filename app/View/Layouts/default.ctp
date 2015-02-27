@@ -29,7 +29,7 @@
 			<meta name="author" content="Azurite Web">
 		<?php
 	
-			echo $this->Html->css('cake.generic');
+			//echo $this->Html->css('cake.generic');
 			echo $this->Html->css('bootstrap.min');
 			echo $this->Html->css('font-awesome.min');
 			echo $this->Html->css('/plugins/animate/animate');
@@ -60,7 +60,7 @@
 	</head>
 	<body class="page page-index">
 		<div class="menu-logo">
-			<a href="index.htm"><img src="img/logo.png"></a>
+			<a href="/"><img src="/img/logo.png"></a>
 		</div>
 		<a href="#content" class="sr-only">Skip to content</a>
 		<div id="navigation" class="wrapper">

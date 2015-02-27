@@ -1,9 +1,9 @@
 <div id="content">
-	<div class="container" id="resin">
-		<div class="resins index">
+	<div class="container" id="decoration">
+		<div class="decorations index">
 			<h2 class="title-divider">
 				<span>
-					<?php echo __('Resins'); ?>					<span class="de-em">
+					<?php echo __('Decorations'); ?>					<span class="de-em">
 						list
 					</span>
 				</span>
@@ -14,14 +14,14 @@
 							<th><?php echo $this->Paginator->sort('name'); ?></th>
 							<th class="actions"><?php echo __('Actions'); ?></th>
 			</tr>
-			<?php foreach ($resins as $resin): ?>
+			<?php foreach ($decorations as $decoration): ?>
 	<tr>
-		<td><?php echo h($resin['Resin']['id']); ?>&nbsp;</td>
-		<td><?php echo h($resin['Resin']['name']); ?>&nbsp;</td>
+		<td><?php echo h($decoration['Decoration']['id']); ?>&nbsp;</td>
+		<td><?php echo h($decoration['Decoration']['name']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $resin['Resin']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $resin['Resin']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $resin['Resin']['id']), null, __('Are you sure you want to delete # %s?', $resin['Resin']['id'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $decoration['Decoration']['id'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $decoration['Decoration']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $decoration['Decoration']['id']), null, __('Are you sure you want to delete # %s?', $decoration['Decoration']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -44,11 +44,9 @@
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
 				<li><?php echo $this->Html->link(__('Admin Home'), array('controller' => 'Settings', 'action' => 'index')); ?></li>
-				<li><?php echo $this->Html->link(__('New Resin'), array('action' => 'add')); ?></li>
+				<li><?php echo $this->Html->link(__('New Decoration'), array('action' => 'add')); ?></li>
 				<li><?php echo $this->Html->link(__('List Containers'), array('controller' => 'containers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Container'), array('controller' => 'containers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Lids'), array('controller' => 'lids', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Lid'), array('controller' => 'lids', 'action' => 'add')); ?> </li>
 			</ul>
 		</div>
 	</div>

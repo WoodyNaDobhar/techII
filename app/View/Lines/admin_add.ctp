@@ -1,12 +1,12 @@
 <div id="content">
-	<div class="container" id="resin">
-		<div class="resins form">
-		<?php echo $this->Form->create('Resin'); ?>
+	<div class="container" id="line">
+		<div class="lines form">
+		<?php echo $this->Form->create('Line'); ?>
 			<fieldset>
 				<h2 class="title-divider">
 					<span>
 						<?php echo __('Add'); ?>						<span class="de-em">
-							<?php echo __('Resin'); ?>						</span>
+							<?php echo __('Line'); ?>						</span>
 					</span>
 				</h2>
 			<?php
@@ -20,11 +20,9 @@
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
 		
-						<li><?php echo $this->Html->link(__('List Resins'), array('action' => 'index')); ?></li>
+						<li><?php echo $this->Html->link(__('List Lines'), array('action' => 'index')); ?></li>
 				<li><?php echo $this->Html->link(__('List Containers'), array('controller' => 'containers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Container'), array('controller' => 'containers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Lids'), array('controller' => 'lids', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Lid'), array('controller' => 'lids', 'action' => 'add')); ?> </li>
 			</ul>
 		</div>
 	</div>

@@ -30,6 +30,14 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 	
+	//admin
+	Router::connect('/admin', array('controller' => 'users', 'action' => 'index', 'admin' => true));
+	
+	//login
+	Router::connect('/admin/users/login', array('controller' => 'users', 'action' => 'login'));
+	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
+	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));
+	
 	//legal
 	Router::connect('/terms', array('controller' => 'pages', 'action' => 'display', 'legal', 'item' => 1));
 	Router::connect('/privacy', array('controller' => 'pages', 'action' => 'display', 'legal', 'item' => 2));
@@ -52,7 +60,6 @@
 	
 	//products
 	Router::connect('/lids', array('controller' => 'pages', 'action' => 'display', 'products', 'item' => 1));
-	Router::connect('/containers', array('controller' => 'pages', 'action' => 'display', 'products', 'item' => 2));
 	Router::connect('/custom', array('controller' => 'pages', 'action' => 'display', 'products', 'item' => 3));
 	Router::connect('/specialty', array('controller' => 'pages', 'action' => 'display', 'products', 'item' => 4));
 	

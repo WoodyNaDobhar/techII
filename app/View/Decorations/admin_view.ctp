@@ -1,61 +1,16 @@
 <div id="content">
-	<div class="container" id="lid">
-		<div class="lids view">
-		<h2><?php echo __('Lid'); ?></h2>
+	<div class="container" id="decoration">
+		<div class="decorations view">
+		<h2><?php echo __('Decoration'); ?></h2>
 			<dl>
 				<dt><?php echo __('Id'); ?></dt>
 		<dd>
-			<?php echo h($lid['Lid']['id']); ?>
+			<?php echo h($decoration['Decoration']['id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Name'); ?></dt>
 		<dd>
-			<?php echo h($lid['Lid']['name']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Ltype'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($lid['Ltype']['name'], array('controller' => 'ltypes', 'action' => 'view', $lid['Ltype']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Diameter'); ?></dt>
-		<dd>
-			<?php echo h($lid['Lid']['diameter']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Height'); ?></dt>
-		<dd>
-			<?php echo h($lid['Lid']['height']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Ctype'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($lid['Ctype']['name'], array('controller' => 'ctypes', 'action' => 'view', $lid['Ctype']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Resin'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($lid['Resin']['name'], array('controller' => 'resins', 'action' => 'view', $lid['Resin']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Print'); ?></dt>
-		<dd>
-			<?php echo h($lid['Lid']['print']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Case Count'); ?></dt>
-		<dd>
-			<?php echo h($lid['Lid']['case_count']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Case Weight'); ?></dt>
-		<dd>
-			<?php echo h($lid['Lid']['case_weight']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Case Pallet'); ?></dt>
-		<dd>
-			<?php echo h($lid['Lid']['case_pallet']); ?>
+			<?php echo h($decoration['Decoration']['name']); ?>
 			&nbsp;
 		</dd>
 			</dl>
@@ -63,23 +18,17 @@
 		<div class="actions">
 			<h3><?php echo __('Actions'); ?></h3>
 			<ul>
-				<li><?php echo $this->Html->link(__('Edit Lid'), array('action' => 'edit', $lid['Lid']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Lid'), array('action' => 'delete', $lid['Lid']['id']), null, __('Are you sure you want to delete # %s?', $lid['Lid']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Lids'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Lid'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Ltypes'), array('controller' => 'ltypes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Ltype'), array('controller' => 'ltypes', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Ctypes'), array('controller' => 'ctypes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Ctype'), array('controller' => 'ctypes', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Resins'), array('controller' => 'resins', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Resin'), array('controller' => 'resins', 'action' => 'add')); ?> </li>
+				<li><?php echo $this->Html->link(__('Edit Decoration'), array('action' => 'edit', $decoration['Decoration']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Decoration'), array('action' => 'delete', $decoration['Decoration']['id']), null, __('Are you sure you want to delete # %s?', $decoration['Decoration']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Decorations'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Decoration'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Containers'), array('controller' => 'containers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Container'), array('controller' => 'containers', 'action' => 'add')); ?> </li>
 			</ul>
 		</div>
 				<div class="related">
 			<h3><?php echo __('Related Containers'); ?></h3>
-			<?php if (!empty($lid['Container'])): ?>
+			<?php if (!empty($decoration['Container'])): ?>
 			<table cellpadding = "0" cellspacing = "0">
 			<tr>
 				<th><?php echo __('Id'); ?></th>
@@ -98,7 +47,7 @@
 		<th><?php echo __('Case Pallet'); ?></th>
 				<th class="actions"><?php echo __('Actions'); ?></th>
 			</tr>
-			<?php foreach ($lid['Container'] as $container): ?>
+			<?php foreach ($decoration['Container'] as $container): ?>
 		<tr>
 			<td><?php echo $container['id']; ?></td>
 			<td><?php echo $container['name']; ?></td>

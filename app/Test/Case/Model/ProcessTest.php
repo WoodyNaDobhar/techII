@@ -1,11 +1,11 @@
 <?php
-App::uses('Line', 'Model');
+App::uses('Process', 'Model');
 
 /**
- * Line Test Case
+ * Process Test Case
  *
  */
-class LineTest extends CakeTestCase {
+class ProcessTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,14 +13,14 @@ class LineTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.line',
+		'app.process',
 		'app.container',
+		'app.line',
 		'app.ctype',
 		'app.lid',
 		'app.ltype',
 		'app.resin',
 		'app.containers_lid',
-		'app.process',
 		'app.decoration'
 	);
 
@@ -31,7 +31,7 @@ class LineTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Line = ClassRegistry::init('Line');
+		$this->Process = ClassRegistry::init('Process');
 	}
 
 /**
@@ -40,7 +40,7 @@ class LineTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Line);
+		unset($this->Process);
 
 		parent::tearDown();
 	}

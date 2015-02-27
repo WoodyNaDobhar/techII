@@ -34,48 +34,36 @@ class AppController extends Controller {
 	public $components = array(
 		'Session',
 		'Auth' => array(
-			'loginRedirect'	=> array(
-				'admin'			=> true,
-				'controller'	=> 'settings',
-				'action'		=> 'index'
+			'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
+			'authError' => 'You must be logged in to view this page.',
+			'loginError' => 'Invalid Username or Password entered, please try again.',
+			'authenticate' => array(
+				'Form'
 			),
-			'logoutRedirect'	=> array(
-				'controller'	=> 'pages',
-				'action'		=> 'display',
+			'authorize' => array('Controller'),
+			'logoutRedirect' => array(
+				'controller' => 'pages',
+				'action' => 'display',
 				'home'
 			)
 		)
 	);
+	
+	public function isAuthorized($user = null) {
 
+		//Only admins can access admin functions
+		if(isset($this->request->params['admin'])) {
+			return (bool)($user['role'] === 'admin');
+		}
+
+		//Any user can access public functions
+		return true;
+	}
+	
 	public function beforeFilter() {
 		
-		$this->Auth->allow('index', 'view', 'display');
-		
-		//site contents
-		$this->loadModel('Contents');
-		$menuContents = $this->Contents->find('all', array(
-			'order'		=> array(
-				'Contents.order'
-			)
-		));
-		
-		foreach($menuContents as $key => $content){
-			
-			$model = $content['Contents']['name'].'Pages';
-			$this->loadModel($model);
-			$subContents = $this->$model->find('all', array(
-				'fields'	=> array(
-					'id',
-					'name',
-					'link',
-					'byline',
-					'description',
-					'nav_image'
-				)
-			));
-			$menuContents[$key]['Contents'][$model] = $subContents;
-		}
-		$this->set('menuContents', $menuContents);
+		//auth
+		$this->Auth->allow(array('display', 'index', 'view'));
 		
 		//site settings
 		$this->loadModel('Settings');
